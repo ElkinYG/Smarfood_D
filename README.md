@@ -1,6 +1,6 @@
 # # SmartFood
 
-> **Red social y plataforma web para restaurantes y negocios de comida **
+**Red social y plataforma web para restaurantes y negocios de comida **
 
 SmartFood es una red social moderna enfocada en conectar restaurantes, negocios de comida y comensales tanto como para restaurantes como para darse a conocer a los clientes. Ofrece una plataforma interactiva con panel de administración para gestionar menús, promociones y crear comunidad. Todo el entorno está optimizado y preparado para su despliegue mediante contenedores Docker, facilitando su escalabilidad.
 

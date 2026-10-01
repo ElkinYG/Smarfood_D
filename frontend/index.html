@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartFood - Menú Digital Inteligente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="navbar">
+      <div class="brand">
+        <span class="logo-icon">🍽️</span>
+        <div>
+          <h1>SmartFood</h1>
+          <p class="tagline">Menú Digital & Restaurante Inteligente</p>
+        </div>
+      </div>
+      <div class="header-status">
+        <span class="status-dot"></span>
+        <span id="backend-status">Conectando backend...</span>
+      </div>
+    </header>
+
+    <!-- Hero / Banner -->
+    <section class="hero-banner">
+      <div class="hero-content">
+        <h2>Experiencia Gastronómica Digital</h2>
+        <p>Explora platillos preparados al momento con ingredientes frescos de la más alta calidad.</p>
+      </div>
+      <!-- Formulario para agregar nuevo platillo -->
+      <div class="add-card">
+        <h3>✨ Agregar Platillo</h3>
+        <form id="add-dish-form">
+          <input type="text" id="dish-name" placeholder="Nombre del platillo..." required />
+          <div class="input-row">
+            <input type="text" id="dish-category" placeholder="Categoría (ej: Hamburguesas)" required />
+            <input type="number" id="dish-price" placeholder="Precio ($)" step="0.01" required />
+          </div>
+          <input type="text" id="dish-desc" placeholder="Descripción breve..." />
+          <button type="submit" id="btn-add">➕ Añadir al Menú</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Categorías / Filtros -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-category="all">Todos</button>
+      <button class="filter-btn" data-category="Hamburguesas">Hamburguesas</button>
+      <button class="filter-btn" data-category="Pizzas">Pizzas</button>
+      <button class="filter-btn" data-category="Saludable">Saludable</button>
+      <button class="filter-btn" data-category="Tacos">Tacos</button>
+    </div>
+
+    <!-- Grid de Platillos -->
+    <main class="menu-section">
+      <div id="menu-grid" class="menu-grid">
+        <div class="loader">Cargando delicias...</div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>🚀 SmartFood Stack: Node.js Backend + Nginx Frontend en Contenedores Docker</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
